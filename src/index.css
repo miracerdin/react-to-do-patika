@@ -59,3 +59,6 @@ li {
   background-color: darkgrey;
   opacity: 0.5;
 }
+button {
+  cursor: pointer;
+}
