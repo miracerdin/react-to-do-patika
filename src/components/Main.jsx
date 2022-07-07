@@ -1,13 +1,25 @@
 import React from "react";
 import { MdDelete } from "react-icons/md";
 import { AiOutlineCheck } from "react-icons/ai";
-const Main = ({ content, show, removeItem, handleCız }) => {
+const Main = ({
+  content,
+  show,
+  removeItem,
+  handleCız,
+  handleAll,
+  handleActive,
+  handleCompleted,
+  actived,
+  complete,
+  click,
+  // data,
+}) => {
   return (
     <>
       <div className="container container-main">
         {!show ? (
           <ul>
-            {content.map((item) => {
+            {click.map((item) => {
               console.log(item);
               const { id, gorev, isDone } = item;
               return (
@@ -25,7 +37,7 @@ const Main = ({ content, show, removeItem, handleCız }) => {
           </ul>
         ) : (
           <ul>
-            {content.map((item) => {
+            {click.map((item) => {
               console.log(item);
               const { id, gorev, isDone } = item;
               return (
@@ -43,10 +55,10 @@ const Main = ({ content, show, removeItem, handleCız }) => {
           </ul>
         )}
       </div>
-      <span>{content.length} items left</span>
-      <button>All</button>
-      <button>Active</button>
-      <button>Completed</button>
+      {/* <span>{content.length} items left</span>
+      <button onClick={handleAll}>All</button>
+      <button onClick={handleActive}>Active</button>
+      <button onClick={handleCompleted}>Completed</button> */}
     </>
   );
 };
