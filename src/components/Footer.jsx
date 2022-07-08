@@ -10,9 +10,15 @@ const Footer = ({
   return (
     <footer>
       <span>{click.length} items left</span>
-      <button onClick={handleAll}>all</button>
-      <button onClick={handleActive}>active</button>
-      <button onClick={handleCompleted}>complete</button>
+      <button onClick={handleAll} className="big-button">
+        All
+      </button>
+      <button onClick={handleActive} className="big-button">
+        Active
+      </button>
+      <button onClick={handleCompleted} className="big-button">
+        Complete
+      </button>
     </footer>
   );
 };
