@@ -27,7 +27,7 @@ const Home = () => {
   const handleCız = (id) => {
     const cızık = content.filter((item) => item.id === id);
     cızık[0].isDone = !cızık[0].isDone;
-    // localStorage.setItem("content", JSON.stringify(content));
+    localStorage.setItem("content", JSON.stringify(content));
     setIsDonen(!isDonen);
   };
   useEffect(() => console.log("hello"), [isDonen]);
