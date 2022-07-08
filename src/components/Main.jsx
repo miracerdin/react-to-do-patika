@@ -1,16 +1,12 @@
 import React from "react";
 import { MdDelete } from "react-icons/md";
 import { AiOutlineCheck } from "react-icons/ai";
+import { useEffect } from "react";
 const Main = ({
   content,
   show,
   removeItem,
   handleCız,
-  handleAll,
-  handleActive,
-  handleCompleted,
-  actived,
-  complete,
   click,
   // data,
 }) => {
@@ -27,7 +23,7 @@ const Main = ({
                   <span className="tik" onClick={() => handleCız(id)}>
                     {<AiOutlineCheck size={20} />}
                   </span>
-                  <span className={"done"}>{gorev}</span>
+                  <p className={"done"}>{gorev}</p>
                   <span>
                     <MdDelete onClick={() => removeItem(id)} />
                   </span>
@@ -45,7 +41,7 @@ const Main = ({
                   <span className="tik1" onClick={() => handleCız(id)}>
                     {isDone ? <AiOutlineCheck size={20} /> : null}
                   </span>
-                  <span className={isDone ? "done" : null}>{gorev}</span>
+                  <p className={isDone ? "done" : null}>{gorev}</p>
                   <span>
                     <MdDelete onClick={() => removeItem(id)} />
                   </span>

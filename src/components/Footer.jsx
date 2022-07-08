@@ -8,12 +8,12 @@ const Footer = ({
   click,
 }) => {
   return (
-    <div>
+    <footer>
       <span>{click.length} items left</span>
       <button onClick={handleAll}>all</button>
       <button onClick={handleActive}>active</button>
       <button onClick={handleCompleted}>complete</button>
-    </div>
+    </footer>
   );
 };
 

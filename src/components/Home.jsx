@@ -35,6 +35,7 @@ const Home = () => {
 
   const handleAll = () => {
     setContent(JSON.parse(localStorage.getItem("content")) || []);
+    setAll(content);
     setClick(content);
   };
 
@@ -42,7 +43,6 @@ const Home = () => {
     const active = content.filter((item) => item.isDone === false);
     setActive(active);
     setClick(active);
-    console.log(active);
   };
   const handleCompleted = () => {
     const complete = content.filter((item) => item.isDone === true);
@@ -50,9 +50,9 @@ const Home = () => {
     setClick(complete);
     console.log(complete);
   };
-  // useEffect(() => {
-  //   setActive(active);
-  // }, [active]);
+  useEffect(() => {
+    setClick(content);
+  }, [content]);
 
   return (
     <>
