@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Lets look at the project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Click to see the project [Click to see the project](https://react-to-do-patika.vercel.app/).
 
 ## Available Scripts
 
