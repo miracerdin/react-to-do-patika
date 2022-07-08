@@ -22,7 +22,8 @@ code {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-shadow: 3px 3px 5px rgba(0.4, 0.7, 0.5);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
   gap: 1rem;
 }
 form span {
@@ -35,8 +36,11 @@ form span {
 .container-main {
   display: flex;
   justify-content: center;
-  background-color: rgb(128, 238, 95);
+  background-color: rgb(243, 242, 231);
   width: 300px;
+  box-shadow: rgba(175, 127, 158, 0.4) 5px 5px,
+    rgba(153, 91, 130, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px,
+    rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
 }
 .container-main p {
   width: 200px;
@@ -56,6 +60,8 @@ li {
   align-items: center;
   width: 250px;
   margin-top: 5px;
+  border-bottom: 1px dashed black;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 .header-arrow-show {
   font-size: 1rem;

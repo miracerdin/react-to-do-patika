@@ -35,7 +35,6 @@ const Home = () => {
 
   const handleAll = () => {
     setContent(JSON.parse(localStorage.getItem("content")) || []);
-    setAll(content);
     setClick(content);
   };
 
