@@ -1,6 +1,6 @@
 # Lets look at the project
 
-[Click to see the project](https://react-to-do-patika.vercel.app/).
+[Click to see the page](https://react-to-do-patika.vercel.app/).
 ![todos](https://user-images.githubusercontent.com/99042499/177963026-678510f1-87fe-4de1-8fba-fcc56bdf2898.gif)
 
 ## Available Scripts
